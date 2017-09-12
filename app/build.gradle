@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.android.zyu"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+greendao {
+    //数据库的schema版本，也可以理解为数据库版本号
+    schemaVersion 1
+    //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
+    daoPackage 'com.android.zyu.data.greendao'
+    //设置DaoMaster、DaoSession、Dao目录
+    targetGenDir 'src/main/java'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    compile "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+    apt "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
+    compile "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    apt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    compile "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
+    compile "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}
