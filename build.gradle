@@ -35,4 +35,5 @@ ext  {
     daggerVersion = '2.7'
     glideVersion = '3.7.0'
     gsonVersion = '2.7'
+    rxRelayVersion = "2.0.0"
 }
