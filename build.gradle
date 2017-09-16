@@ -36,4 +36,6 @@ ext  {
     glideVersion = '3.7.0'
     gsonVersion = '2.7'
     rxRelayVersion = "2.0.0"
+    rxVersion = '2.0.1'
+    greenDaoVersion = "3.2.2"
 }

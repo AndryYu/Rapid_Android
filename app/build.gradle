@@ -53,12 +53,13 @@ dependencies {
     compile "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
-    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxVersion"
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxVersion"
     compile "com.jakewharton.rxrelay2:rxrelay:$rootProject.ext.rxRelayVersion"
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
     compile 'com.squareup.retrofit2:converter-scalars:2.2.0'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     compile 'com.squareup.okhttp3:okhttp:3.3.0'
+    compile "org.greenrobot:greendao:$rootProject.ext.greenDaoVersion"
 }
