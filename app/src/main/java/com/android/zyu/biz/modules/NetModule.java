@@ -4,6 +4,7 @@ import android.support.compat.BuildConfig;
 import android.util.Log;
 
 import com.android.zyu.net.ApiService;
+import com.android.zyu.util.DataUtil;
 
 import java.io.IOException;
 import java.security.SecureRandom;
@@ -52,7 +53,7 @@ public class NetModule {
                                 .method(original.method(), original.body())
                                 .build();
                         Response response = chain.proceed(request);
-                        String body = response.body().toString();
+                        String body = DataUtil.readResponseStr(response);
                         Log.i("zyf", body);
                         return response;
                     }
