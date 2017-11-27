@@ -1,4 +1,4 @@
-package com.android.zyu.util;
+package com.andryyu.rapiddev.utils;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;

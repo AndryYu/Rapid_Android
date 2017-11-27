@@ -1,6 +1,5 @@
 package com.android.zyu.biz.modules;
 
-import android.support.compat.BuildConfig;
 import android.util.Log;
 
 import com.android.zyu.net.ApiService;
