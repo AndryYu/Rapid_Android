@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RapidDevLibrary/RapidDevLibrary.iml" filepath="$PROJECT_DIR$/RapidDevLibrary/RapidDevLibrary.iml" />
+      <module fileurl="file://F:\WorkSpace\Git\Rapid_Android\RapidDevLibrary\RapidDevLibrary.iml" filepath="F:\WorkSpace\Git\Rapid_Android\RapidDevLibrary\RapidDevLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/Rapid_Android.iml" filepath="$PROJECT_DIR$/Rapid_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
