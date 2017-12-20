@@ -5,4 +5,5 @@ package com.android.zyu.base;
  */
 
 public interface BasePresenter<T> {
+
 }
