@@ -6,27 +6,22 @@ import android.content.Context;
 import com.android.zyu.biz.components.DaggerNetComponent;
 import com.android.zyu.biz.components.NetComponent;
 import com.android.zyu.biz.modules.NetModule;
-import com.android.zyu.util.AppCrashHandler;
+import com.andryyu.rapiddev.RdApplicaiton;
+import com.andryyu.rapiddev.utils.AppCrashHandler;
 
 /**
  * Created by yufei on 2017/9/12.
  */
 
-public class BaseApplication extends Application {
+public class BaseApplication extends RdApplicaiton {
 
-    private static Context context;
     private NetComponent netComponent;
 
-    public static Context getContext(){
-        return context;
-    }
 
     @Override
     public void onCreate() {
         super.onCreate();
 
-        context = this;
-        AppCrashHandler.getInstance().setCrashHandler(this);
         initNet();
     }
 

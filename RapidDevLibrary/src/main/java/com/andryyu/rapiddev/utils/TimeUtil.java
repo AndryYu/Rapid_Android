@@ -1,4 +1,4 @@
-package com.android.zyu.util;
+package com.andryyu.rapiddev.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,8 +8,6 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
-
-import android.app.Activity;
 
 /**
  * Created by yufei on 2017/9/17.

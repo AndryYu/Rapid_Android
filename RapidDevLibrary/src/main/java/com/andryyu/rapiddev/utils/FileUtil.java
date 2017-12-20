@@ -1,10 +1,9 @@
-package com.android.zyu.util;
+package com.andryyu.rapiddev.utils;
 
 import android.content.Context;
 import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;
-
 
 import java.io.BufferedReader;
 import java.io.File;

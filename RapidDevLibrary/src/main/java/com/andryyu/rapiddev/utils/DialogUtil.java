@@ -1,4 +1,4 @@
-package com.android.zyu.util;
+package com.andryyu.rapiddev.utils;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.os.Looper;
 import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
 
-import com.android.zyu.BaseApplication;
+import com.andryyu.rapiddev.RdApplicaiton;
 
 
 /**
@@ -35,11 +35,11 @@ public class DialogUtil {
     }
 
     public static void showShort(String msg) {
-        Toast.makeText(BaseApplication.getContext(), msg, Toast.LENGTH_SHORT).show();
+        Toast.makeText(RdApplicaiton.getContext(), msg, Toast.LENGTH_SHORT).show();
     }
 
     public static void showLong(String msg) {
-        Toast.makeText(BaseApplication.getContext(), msg, Toast.LENGTH_LONG).show();
+        Toast.makeText(RdApplicaiton.getContext(), msg, Toast.LENGTH_LONG).show();
     }
 
     public static void showLoad(Context context,String msg){
