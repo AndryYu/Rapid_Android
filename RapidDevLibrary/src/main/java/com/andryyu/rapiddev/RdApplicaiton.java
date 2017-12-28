@@ -3,7 +3,7 @@ package com.andryyu.rapiddev;
 import android.app.Application;
 import android.content.Context;
 
-import com.andryyu.rapiddev.utils.AppCrashHandler;
+import com.andryyu.rapiddev.util.AppCrashHandler;
 
 /**
  * Created by Administrator on 2017\11\27 0027.
