@@ -1,4 +1,4 @@
-package com.andryyu.rapiddev.utils;
+package com.andryyu.rapiddev.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
