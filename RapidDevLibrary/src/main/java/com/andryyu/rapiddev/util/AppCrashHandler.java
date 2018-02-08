@@ -99,8 +99,9 @@ public class AppCrashHandler implements Thread.UncaughtExceptionHandler{
         }
 
         builder.append(obtainExceptionInfo(throwable));
-        FileUtil.writeLogCrashContent(context, builder.toString());
-        DialogUtil.showInThread(context, String.format("%s\n%s", "很抱歉，程序遭遇异常，即将退出！", builder.toString()));
+        String error = builder.toString();
+        FileUtil.writeLogCrashContent(context, error);
+        DialogUtil.showInThread(context, String.format("%s\n%s", "很抱歉，程序遭遇异常，即将退出！", error));
     }
 
 
