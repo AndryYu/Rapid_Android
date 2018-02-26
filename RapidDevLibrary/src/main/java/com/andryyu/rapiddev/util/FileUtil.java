@@ -167,11 +167,15 @@ public class FileUtil {
     }
 
     public static String getFileDir(String filePath) {
+      return getFileDir(filePath,mContext);
+    }
+
+    public static String getFileDir(String filePath,Context context) {
         String dir;
         if (isExistSDCard()) {
-            dir = mContext.getApplicationContext().getExternalFilesDir("").getAbsolutePath();
+            dir = context.getApplicationContext().getExternalFilesDir("").getAbsolutePath();
         } else {
-            dir = mContext.getApplicationContext().getFilesDir().getAbsolutePath();
+            dir = context.getApplicationContext().getFilesDir().getAbsolutePath();
         }
 
         if (TextUtils.isEmpty(filePath))
