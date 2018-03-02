@@ -31,17 +31,6 @@ public class NetCacheUtils {
      * @param url   下载图片的网络地址
      */
     public void getBitmapFromNet(final String url, HttpCallBack httpCallBack) {
-        NetManager.getInstance().doRequest(url, httpCallBack);
-    }
-
-
-    public static void downloadUrlToStream(String url){
-
-    }
-
-
-    public static boolean downloadUrlToStream(String url, OutputStream outputStream){
-
-        return false;
+        NetManager.getInstance().doRequest(url, null, httpCallBack);
     }
 }
